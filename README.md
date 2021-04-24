@@ -66,16 +66,16 @@ println("matriz A (depois da modificação): ", A)
 
 ```julia
 # Inicializando a matriz A com zeros
-A = ones(3, 3)
+A = zeros(3, 3)
 println("matriz A (antes da modificação): ", A)
 
 # Alterando uma parte da matriz A
-A[1, 1:2] = zeros(1,2)
+A[1, 1:2] = ones(1,2)
 println("matriz A (depois da modificação): ", A)
 ```
 
-    matriz A (antes da modificação): [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0]
-    matriz A (depois da modificação): [0.0 0.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0]
+    matriz A (antes da modificação): [0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]
+    matriz A (depois da modificação): [1.0 1.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]
 
 
 #### Preencher as linhas e colunas de 1 a 2 com uns
@@ -83,16 +83,16 @@ println("matriz A (depois da modificação): ", A)
 
 ```julia
 # Inicializando a matriz A com zeros
-A = ones(3, 3)
+A = zeros(3, 3)
 println("matriz A (antes da modificação): ", A)
 
 # Alterando uma parte da matriz A
-A[1:2, 1:2] = zeros(2,2)
+A[1:2, 1:2] = ones(2,2)
 println("matriz A (depois da modificação): ", A)
 ```
 
-    matriz A (antes da modificação): [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0]
-    matriz A (depois da modificação): [0.0 0.0 1.0; 0.0 0.0 1.0; 1.0 1.0 1.0]
+    matriz A (antes da modificação): [0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]
+    matriz A (depois da modificação): [1.0 1.0 0.0; 1.0 1.0 0.0; 0.0 0.0 0.0]
 
 
 #### Soma e subtração de matrizes
@@ -134,4 +134,3 @@ println("Inversa de A: ", inv(A))
 ```
 
     Inversa de A: [-1.9999999999999996 0.9999999999999998; 1.4999999999999998 -0.4999999999999999]
-    
